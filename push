@@ -1,0 +1,6 @@
+#! /bin/bash
+docker login
+echo "Input an version"
+read VERSION
+docker push glacier3/ruby-nginx:latest
+docker push glacier3/ruby-nginx:$VERSION

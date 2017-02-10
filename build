@@ -1,0 +1,6 @@
+#! /bin/bash
+docker build -t glacier3/ruby-nginx .
+
+echo "Input an version"
+read VERSION
+docker tag glacier3/ruby-nginx:latest glacier3/ruby-nginx:$VERSION
